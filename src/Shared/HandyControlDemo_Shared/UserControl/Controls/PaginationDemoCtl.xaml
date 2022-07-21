@@ -12,12 +12,12 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <hc:Pagination MaxPageCount="10" PageIndex="{Binding PageIndex}" IsJumpEnabled="True">
-                <hc:Interaction.Triggers>
+            <hc:Pagination MaxPageCount="10" PageIndex="{Binding PageIndex}" IsJumpEnabled="False">
+                <!--<hc:Interaction.Triggers>
                     <hc:EventTrigger EventName="PageUpdated">
                         <hc:EventToCommand Command="{Binding PageUpdatedCmd}" PassEventArgsToCommand="True" />
                     </hc:EventTrigger>
-                </hc:Interaction.Triggers>
+                </hc:Interaction.Triggers>-->
             </hc:Pagination>
             <DataGrid IsReadOnly="True" Width="600" Margin="0,16,0,0" Grid.Row="1" HeadersVisibility="All" RowHeaderWidth="60" AutoGenerateColumns="False" ItemsSource="{Binding DataList}">
                 <DataGrid.RowHeaderTemplate>
